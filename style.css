@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'League Spartan', sans-serif;
+    color: #1A1916;
+}
+
+h1 {
+    font-size: 91px;
+    line-height: 104px;
+}
+
+h2 {
+    font-size: 64px;
+    line-height: 80px;
+}
+
+h3 {
+    font-size: 46px;
+    line-height: 56px;
+}
+
+h4 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+h5 {
+    font-size: 23px;
+    line-height: 32px;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.gold-grad {
+    background: linear-gradient(90deg, #FD9505, #FAC508);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section {
+    margin-bottom: 128px;
+}
+
+section .sect-text {
+    text-align: center;
+    margin: 0 auto 32px auto;
+    width: 50%;
+}
+
+/* Header Styles ########################################################## */
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 128px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 64px;
+}
+
+.main-header .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.main-header .nav #main-nav {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    justify-content: end;
+    align-items: center;
+}
+
+.main-header .nav #main-nav a {
+    text-decoration: none;
+    margin: auto 32px;
+}
+
+.main-header .nav #main-nav a:not(.gold-grad):hover {
+    background: linear-gradient(90deg, #FD9505, #FAC508);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-header .nav #main-nav a.gold-grad:hover {
+    background: #1A1916;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-header .nav .socials-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding-left: 16px;
+    border-left: 1px solid rgba(26, 25, 23, 0.25);
+}
+
+.main-header .nav .socials-nav a {
+    text-decoration: none;
+    padding: 8px;
+    margin-left: 8px;
+    color: #1A1916;
+    transition: 5s;
+}
+
+.main-header .nav .socials-nav a:hover {
+    background: linear-gradient(90deg, #FD9505, #FAC508);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Hero Styles ############################################################# */
+
+.hero-sect {
+    background-image: url(images/hero.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.hero-sect .bg-shade {
+    background-color: rgba(26, 25, 22, 0.5);
+    width: 100%;
+    height: 100%;
+    padding: 10% 0;
+}
+
+.hero-sect .bg-shade h1 {
+    margin: 0 auto 16px auto;
+    max-width: 40%;
+    background: linear-gradient(90deg, #FD9505, #FAC508);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-filter: drop-shadow(0 0 10px rgba(26, 25, 23, 0.5));
+}
+
+.hero-sect .bg-shade h3 {
+    font-weight: 200;
+    color: #fff;
+    max-width: 30%;
+    margin: 0 auto 16px auto;
+    -webkit-filter: drop-shadow(0 0 10px rgba(26, 25, 23, 0.5));
+}
+
+.hero-sect .bg-shade a {
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    width: 10%;
+    min-width: 256px;
+    -webkit-filter: drop-shadow(0 0 8px rgba(26, 25, 23, 0.5));
+}
+
+.hero-sect .bg-shade a h6 {
+    padding: 18px 0;
+    background: linear-gradient(90deg, #FD9505, #FAC508);
+    border-radius: 30px;
+    color: #fff;
+}
+
+.hero-sect .bg-shade a h6:hover {
+    padding: 16px 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 2px solid #FD9505;
+    border-radius: 30px;
+}
+
+/* Partner Styles ############################################################## */
+
+.partner-sect .partner-sect-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: rgb(26, 25, 22, .25);
+    width: 100%;
+}
+
+.partner-sect .partner-sect-logo a {
+    margin: 32px 64px;
+    max-width: 320px;
+}
+
+.partner-sect .partner-sect-logo a img {
+    width: 100%;
+}
+
+/* Featured jobs Styles ######################################################### */
+
+.featured-jobs-sect {
+    padding-bottom: 128px;
+}
+
+.featured-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #FD9505, #FAC508);
+}
+
+.featured-carousel .featured-bg {
+    margin: 128px 64px -128px 64px;
+    max-width: 512px;
+    height: auto;
+}
+
+.featured-carousel .featured-slide {
+    padding: 32px 64px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 8px rgb(26, 25, 22, .50);
+    text-align: center;
+}
+
+.featured-carousel .featured-slide i {
+    display: flex;
+    height: 192px;
+    font-size: 128px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #FD9505, #FAC508);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.featured-carousel .featured-slide h5 {
+    font-weight: 300;
+}
+
+.featured-carousel .featured-slide a {
+    text-decoration: none;
+}
+
+.featured-carousel .featured-slide a h5 {
+    margin-top: 32px;
+    padding: 8px 16px;
+    border: 3px solid rgb(26, 25, 22);
+    display: block;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+.featured-carousel .featured-slide a h5:hover {
+    color: #fff;
+    background: #1A1916;
+}
+
+/* Benefit Styles ############################################################# */
+
+.benefit-sect {
+    padding-bottom: 128px;
+}
+
+.benefit-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #FD9505, #FAC508);
+}
+
+.benefit-cont-left {
+    margin: 128px 64px -128px 64px;
+}
+
+.benefit-cont-left .white-square {
+    box-shadow: -32px -32px #fff;
+}
+
+.benefit-cont-left .white-square img {
+    max-width: 512px;
+    box-shadow: 0 8px 8px rgb(26, 25, 22, .50);
+}
+
+.benefit-cont-right ul {
+    list-style: none;
+    margin: 128px 0 128px 0;
+}
+
+.benefit-cont-right ul li {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 16px 64px;
+}
+
+.benefit-cont-right ul li i {
+    width: 32px;
+    margin-right: 8px;
+}
+
+/* Testimonials Styles ############################################################# */
+
+.testimonials-sect {
+    padding-bottom: 128px;
+}
+
+.testimonials-carousel {
+    background:rgb(26, 25, 22, .25);
+}
+
+.testimonials-carousel .testimonials-bg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.testimonials-carousel .testimonials-bg .testimonials-arrows {
+    font-size: 48px;
+    color: #fff;
+    -webkit-filter: drop-shadow(0 5px 5px rgba(26, 25, 23, 0.25));
+    margin-bottom: -256px;
+}
+
+.testimonials-carousel .testimonials-slide {
+    position: relative;
+    margin: 128px 64px -128px 64px;
+    max-width: 512px;
+    padding: 32px 64px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 8px rgb(26, 25, 22, .50);
+    text-align: center;
+}
+
+.testimonials-carousel .testimonials-slide .testimonials-text {
+    margin-bottom: 64px;
+    margin-top: 64px;
+}
+
+.testimonials-carousel .testimonials-slide .quote-icon {
+    position: absolute;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #FD9505, #FAC508);
+    width: 64px;
+    height: 64px;
+    top: -7%;
+    left: 7%;
+}
+
+.testimonials-carousel .testimonials-slide .work-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 16px 0 32px 0;
+}
+
+.testimonials-carousel .testimonials-slide .work-info h5 {
+    padding-left: 16px;
+    border-left: 1px solid rgb(26, 25, 22, .50);
+    background: linear-gradient(90deg, #FD9505, #FAC508);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Footer Styles ############################################################# */
+
+.main-footer {
+    background: rgb(26, 25, 22, .75);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 32px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-content .footer-div {
+    width: 256px;
+}
+
+.footer-content .footer-div h4, .footer-content .footer-div p {
+    color: #fff !important;
+}
+
+.footer-div .footer-socials a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 16px;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    padding: 32px 0;
+}
+
+.footer-copyright .copyright-text {
+    color: #fff;
+    padding-right: 32px;
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.footer-copyright a {
+    color: #fff;
+    padding-left: 32px;
+}
+
