@@ -1,2 +1,2 @@
-# HTML-CSS-Website
+# HTML-CSS-JS-Website
 Simple HTML CSS JS Website
