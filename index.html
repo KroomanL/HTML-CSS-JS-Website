@@ -198,7 +198,7 @@
 
     <div class="apply-form-popup" id="apply-form">
         <div class="apply-popup-bg">
-            <form action="" class="apply-form-container">
+            <form action="" class="apply-form-container" onsubmit="applysuccess()">
                 <label for="name">
                     <h6>Full Name</h6>
                 </label>
@@ -220,7 +220,7 @@
                 <input type="text" placeholder="09123456789" name="phone" maxlength="11" required>
 
                 <div class="btn-container">
-                    <button type="submit" class="btn" onclick="applysuccess()">
+                    <button type="submit" class="btn">
                         <h6>Submit</h6>
                     </button>
                     <button type="button" class="btn cancel" onclick="closeapplyform()">
@@ -235,39 +235,7 @@
         <button id="scroll-up" onclick="scrolltop()"><i class=" fa-solid fa-chevron-up fa-lg"></i></button>
     </div>
 
-    <script>
-        function openapplyform() {
-            document.getElementById("apply-form").style.display = "block";
-        }
-
-        function closeapplyform() {
-            document.getElementById("apply-form").style.display = "none";
-        }
-
-        function applysuccess() {
-            alert("Thank you! We will endorse you to the nearest company near you.");
-        }
-
-        window.onscroll = function() {
-            showscroll();
-        }
-
-        function showscroll() {
-            if (window.scrollY > 100) {
-                document.getElementById("scroll-btn").style.display = "block";
-            } else {
-                document.getElementById("scroll-btn").style.display = "none";
-            }
-        }
-
-        function scrolltop() {
-            window.scrollTo({
-                top: 0,
-                left: 0,
-                behavior: "smooth",
-            });
-        }
-    </script>
+    <script src="functions.js"></script>
 </body>
 
 </html>
