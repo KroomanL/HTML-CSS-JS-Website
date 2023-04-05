@@ -36,9 +36,9 @@
         <div class="bg-shade">
             <h1>Jump start your career with us.</h1>
             <h3>We will help you connect with various companies.</h3>
-            <a href="#">
+            <button onclick="openapplyform()">
                 <h6>Apply Now <i class="fa-solid fa-file-signature fa-lg"></i></h6>
-            </a>
+            </button>
         </div>
     </section>
     <section class="partner-sect">
@@ -161,25 +161,25 @@
     </section>
     <footer class="main-footer">
         <div class="footer-content">
-            <div class="footer-div">
+            <div>
                 <img src="images/dsourceph-logo-footer.png" alt="D'Source PH Logo">
             </div>
-            <div class="footer-div">
+            <div>
                 <h4>Working hours</h4>
                 <p>Week Days:<br />
                     8:00am - 5:00pm</p>
             </div>
-            <div class="footer-div">
+            <div>
                 <h4>Get in touch</h4>
                 <p>0917-103-2303<br />
                     hello@dsourceph.com</p>
             </div>
-            <div class="footer-div">
+            <div>
                 <h4>Address</h4>
                 <p>Baguio City, Benguet<br />
                     Philippines 2600</p>
             </div>
-            <div class="footer-div">
+            <div>
                 <h4>Socials</h4>
                 <nav class="footer-socials">
                     <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
@@ -190,9 +190,84 @@
         </div>
         <div class="footer-copyright">
             <p class="copyright-text">D’Source PH © 2022</p>
-            <a href=""><p>Privacy Policy</p></a>
+            <a href="">
+                <p>Privacy Policy</p>
+            </a>
         </div>
     </footer>
+
+    <div class="apply-form-popup" id="apply-form">
+        <div class="apply-popup-bg">
+            <form action="" class="apply-form-container">
+                <label for="name">
+                    <h6>Full Name</h6>
+                </label>
+                <input type="text" placeholder="Juan Dela Cruz" name="name" required>
+
+                <label for="address">
+                    <h6>Address (City)</h6>
+                </label>
+                <input type="text" placeholder="Quezon City" name="address" required>
+
+                <label for="email">
+                    <h6>Email</h6>
+                </label>
+                <input type="text" placeholder="juandelacruz@gmail.com" name="email" required>
+
+                <label for="phone">
+                    <h6>Phone Number</h6>
+                </label>
+                <input type="text" placeholder="09123456789" name="phone" maxlength="11" required>
+
+                <div class="btn-container">
+                    <button type="submit" class="btn" onclick="applysuccess()">
+                        <h6>Submit</h6>
+                    </button>
+                    <button type="button" class="btn cancel" onclick="closeapplyform()">
+                        <h6>Cancel</h6>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="back-to-top" id="scroll-btn">
+        <button id="scroll-up" onclick="scrolltop()"><i class=" fa-solid fa-chevron-up fa-lg"></i></button>
+    </div>
+
+    <script>
+        function openapplyform() {
+            document.getElementById("apply-form").style.display = "block";
+        }
+
+        function closeapplyform() {
+            document.getElementById("apply-form").style.display = "none";
+        }
+
+        function applysuccess() {
+            alert("Thank you! We will endorse you to the nearest company near you.");
+        }
+
+        window.onscroll = function() {
+            showscroll();
+        }
+
+        function showscroll() {
+            if (window.scrollY > 100) {
+                document.getElementById("scroll-btn").style.display = "block";
+            } else {
+                document.getElementById("scroll-btn").style.display = "none";
+            }
+        }
+
+        function scrolltop() {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth",
+            });
+        }
+    </script>
 </body>
 
 </html>

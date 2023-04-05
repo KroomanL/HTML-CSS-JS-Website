@@ -169,23 +169,26 @@ section .sect-text {
     -webkit-filter: drop-shadow(0 0 10px rgba(26, 25, 23, 0.5));
 }
 
-.hero-sect .bg-shade a {
+.hero-sect .bg-shade button {
     display: block;
     margin: 0 auto;
     text-decoration: none;
     width: 10%;
     min-width: 256px;
     -webkit-filter: drop-shadow(0 0 8px rgba(26, 25, 23, 0.5));
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
 }
 
-.hero-sect .bg-shade a h6 {
+.hero-sect .bg-shade button h6 {
     padding: 18px 0;
     background: linear-gradient(90deg, #FD9505, #FAC508);
     border-radius: 30px;
     color: #fff;
 }
 
-.hero-sect .bg-shade a h6:hover {
+.hero-sect .bg-shade button h6:hover {
     padding: 16px 0;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -400,15 +403,11 @@ section .sect-text {
     margin: 0 auto;
 }
 
-.footer-content .footer-div {
-    width: 256px;
-}
-
-.footer-content .footer-div h4, .footer-content .footer-div p {
+.footer-content h4, .footer-content p {
     color: #fff !important;
 }
 
-.footer-div .footer-socials a{
+.footer-socials a{
     text-decoration: none;
     color: #fff;
     margin-right: 16px;
@@ -431,3 +430,92 @@ section .sect-text {
     padding-left: 32px;
 }
 
+/* Apply Popup Styles ############################################################# */
+
+.apply-form-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background: rgba(25, 24, 21, 0.7);
+    width: 100%;
+    height: 100%;
+  }
+
+  .apply-popup-bg {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .apply-form-container {
+    max-width: 320px;
+    max-height: 512px;
+    padding: 16px;
+    background-color: white;
+    border-radius: 16px;
+  }
+  
+  .apply-form-container input[type=text] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: none;
+    background: rgba(25, 24, 21, 0.10);
+    border-radius: 8px;
+  }
+  
+  .apply-form-container input[type=text]:focus {
+    background-color: rgba(25, 24, 21, 0.20);
+    outline: none;
+  }
+  
+  .apply-form-container .btn-container {
+    width: 100%;
+    display: flex;
+  }
+
+  .apply-form-container .btn-container .btn {
+    background-color: #04AA6D;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    min-width: 128px;
+    opacity: 0.8;
+  }
+
+  .apply-form-container .btn-container .btn h6{
+    color: white;
+  }
+  
+  .apply-form-container .btn-container .cancel {
+    background-color: red;
+    margin-left: 16px;
+  }
+  
+  .apply-form-container .btn-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  /* Back to top Styles ########################################################### */
+
+  .back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+  }
+
+  .back-to-top #scroll-up {
+    font-size: 16px;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background: rgb(26, 25, 22);
+    cursor: pointer;
+  }
