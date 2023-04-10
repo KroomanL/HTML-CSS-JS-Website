@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS JS Website - Jobs</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/12cab8bcdd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="index.html"><img src="images/dsourceph-logo.png" alt="Website Logo"></a>
+        <div class="nav">
+            <nav id="main-nav">
+                <a href="jobs.html">
+                    <h5>Jobs</h5>
+                </a>
+                <a href="about.html">
+                    <h5>About Us</h5>
+                </a>
+                <a class="gold-grad" href="#">
+                    <h5>Contact Us</h5>
+                </a>
+            </nav>
+            <nav class="socials-nav">
+                <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok fa-lg"></i></a>
+            </nav>
+        </div>
+    </header>
+    <section class="jobs-main">
+        <div class="sect-text">
+            <h3 class="h3-bold">Jobs</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium animi laborum, corrupti iusto non
+                dolorem perferendis eveniet ratione temporibus iure nisi aliquid deserunt sed omnis rerum voluptatem
+                dolorum numquam? Voluptates?</p>
+        </div>
+        <div class="jobs-flex">
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div>
+                <img src="images/dsourceph-logo-footer.png" alt="D'Source PH Logo">
+            </div>
+            <div>
+                <h4>Working hours</h4>
+                <p>Week Days:<br />
+                    8:00am - 5:00pm</p>
+            </div>
+            <div>
+                <h4>Get in touch</h4>
+                <p>0917-103-2303<br />
+                    hello@dsourceph.com</p>
+            </div>
+            <div>
+                <h4>Address</h4>
+                <p>Baguio City, Benguet<br />
+                    Philippines 2600</p>
+            </div>
+            <div>
+                <h4>Socials</h4>
+                <nav class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok fa-lg"></i></a>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p class="copyright-text">D’Source PH © 2022</p>
+            <a href="">
+                <p>Privacy Policy</p>
+            </a>
+        </div>
+    </footer>
+
+    <div class="jobs-details" id="jobs-view">
+        <div class="jobs-details-bg">
+            <h4 id="jobs-details-pos">Customer Support</h4>
+            <h5 id="jobs-details-loc">Quezon City</h5>
+            <h5 id="jobs-details-sal">20000 - 30000</h5>
+            <p id="jobs-details-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur modi saepe commodi, culpa,
+                nobis perspiciatis repudiandae cum rem reiciendis illo, nemo harum repellat nulla repellendus fugit
+                suscipit officia molestiae! Dolor mollitia sit consequatur, eaque nulla excepturi provident fuga ex
+                magnam aliquid perferendis necessitatibus iure harum est itaque voluptate quas maiores doloremque magni
+                quam? Rerum saepe odit libero illum cupiditate tenetur explicabo? Odit accusantium deserunt tempore ut
+                cupiditate harum, sit, similique veritatis perspiciatis aut dolorem labore perferendis, ad quia aperiam
+                exercitationem mollitia! Sint repellendus quod consectetur, suscipit omnis minima ipsum. Fugiat id
+                officiis natus numquam ex pariatur rem quasi illo.</p>
+            <div class="btn-container">
+                <button type="button" class="btn" onclick="openapplyforml()">
+                    <h6>Apply</h6>
+                </button>
+                <button type="button" class="btn cancel" onclick="closeviewdetails()">
+                    <h6>Cancel</h6>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="apply-form-popup" id="apply-form">
+        <div class="apply-popup-bg">
+            <form action="" class="apply-form-container" onsubmit="applysuccess()">
+                <label for="name">
+                    <h6>Full Name</h6>
+                </label>
+                <input type="text" placeholder="Juan Dela Cruz" name="name" required>
+
+                <label for="address">
+                    <h6>Address (City)</h6>
+                </label>
+                <input type="text" placeholder="Quezon City" name="address" required>
+
+                <label for="email">
+                    <h6>Email</h6>
+                </label>
+                <input type="text" placeholder="juandelacruz@gmail.com" name="email" required>
+
+                <label for="phone">
+                    <h6>Phone Number</h6>
+                </label>
+                <input type="text" placeholder="09123456789" name="phone" maxlength="11" required>
+
+                <label for="resume">
+                    <h6>Resume (PDF / Docx)</h6>
+                </label>
+                <input type="file" name="resume" required accept=
+                "application/msword, application/pdf">
+
+                <div class="btn-container">
+                    <button type="submit" class="btn">
+                        <h6>Submit</h6>
+                    </button>
+                    <button type="button" class="btn cancel" onclick="closeapplyforml()">
+                        <h6>Cancel</h6>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="back-to-top" id="scroll-btn">
+        <button id="scroll-up" onclick="scrolltop()"><i class=" fa-solid fa-chevron-up fa-lg"></i></button>
+    </div>
+
+    <script src="functions.js"></script>
+</body>
+
+</html>
