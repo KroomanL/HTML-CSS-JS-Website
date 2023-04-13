@@ -647,7 +647,11 @@ section .sect-text {
   /* About Us Styles ############################################################ */
 
   .about-hero {
-    background: linear-gradient(90deg, var(--ds-secondary), var(--ds-primary));
+    background: url(images/about-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    box-shadow: inset 0 0 0 200px rgb(255, 255, 255, .5);
     padding: 128px 0;
   }
 
@@ -668,9 +672,16 @@ section .sect-text {
     text-transform: uppercase;
   }
 
-  .about-message {
+  .about-message-container{
+    background: linear-gradient(90deg, var(--ds-secondary), var(--ds-primary));
+    margin-top: -128px;
+    margin-bottom: 0;
+    padding: 128px 0;
+  }
+
+  .about-message-container .about-message {
     text-align: center;
-    margin: 0 auto 120px auto;
+    margin: 0 auto;
     width: 80%;
   }
 
@@ -734,4 +745,126 @@ section .sect-text {
 
   .about-values .values-container .values-box h4 {
     text-transform: uppercase;
+  }
+
+  /* Contact Us Styles ############################################################ */
+
+  .contact-hero {
+    background: linear-gradient(90deg, var(--ds-secondary), var(--ds-primary));
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+
+  .main-contact {
+    padding: 128px 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-contact .form-container {
+    background: var(--ds-primary);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 768px;
+    height: 512px;
+    border-radius: 32px;
+    box-shadow: 0px 8px 8px var(--ds-black25);
+    z-index: 1;
+  }
+
+  .form-container .contact-form {
+    text-align: center;
+    width: 50%;
+  }
+
+  .contact-form .actual-contact-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-form .actual-contact-form input {
+    margin: 8px 0;
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: inset 0 2px 4px 0px var(--ds-black25);
+  }
+
+  .contact-form .actual-contact-form textarea {
+    margin: 8px 0;
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    resize: none;
+    box-shadow: inset 0 2px 4px 0px var(--ds-black25);
+  }
+
+  .contact-form .actual-contact-form button {
+    color: #fff;
+    background: #61d345;
+    font-family: 'League Spartan';
+    font-size: 23px;
+    font-weight: 700;
+    margin: 8px 0;
+    width: 50%;
+    min-width: 96px;
+    padding: 16px;
+    border: 2px solid #61d345;
+    border-radius: 32px;
+    cursor: pointer;
+    transition: 1s;
+    box-shadow: 0px 8px 8px var(--ds-black25);
+  }
+
+  .contact-form .actual-contact-form button:hover {
+    color: #61d345;
+    background: #fff;
+    border: 2px solid #61d345;
+  }
+
+  .main-contact .info-container {
+    background: var(--ds-secondary);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 768px;
+    height: 512px;
+    border-radius: 32px;
+    margin-top: 64px;
+    margin-left: -64px;
+    box-shadow: 0px 8px 8px var(--ds-black25);
+  }
+
+  .info-container .contact-info {
+    text-align: center;
+  }
+
+  .contact-info .contact-socials {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0;
+  }
+
+  .contact-info .contact-socials a {
+    color: var(--ds-black);
+    margin: 0 16px;
+    font-size: 32px;
+    transition: 1s;
+  }
+
+  .contact-info .contact-socials a:hover {
+    color: #fff;
   }
