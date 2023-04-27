@@ -1,2 +1,2 @@
-# HTML-CSS-JS-Website
-Simple HTML CSS JS Website
+# WebDevPortfolio
+Simple Websites for Portfolio
